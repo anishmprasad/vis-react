@@ -17,7 +17,7 @@ This component takes three vis.js configuration objects as properties:
 # Usage
 
 ```javascript
-var Graph = require('react-vis');
+var Graph = require('vis-react');
 
 var graph = {
   nodes: [
