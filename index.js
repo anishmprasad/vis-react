@@ -1,9 +1,9 @@
-import React from 'react';
-import defaultsDeep from 'lodash/fp/defaultsDeep';
-import isEqual from 'lodash/isEqual';
-import differenceWith from 'lodash/differenceWith';
-import vis from 'vis';
-import uuid from 'uuid';
+var React = require('react');
+var defaultsDeep = require('lodash/fp/defaultsDeep')
+var isEqual = require('lodash/isEqual');
+var differenceWith = require('lodash/differenceWith');
+var vis = require('vis');
+var uuid = require('uuid');
 
 class Graph extends React.Component {
     constructor(props) {
@@ -193,4 +193,6 @@ class Graph extends React.Component {
     }
 }
 
-export default Graph;
+// export default Graph;
+
+module.exports = Graph;
