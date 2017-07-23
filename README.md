@@ -1,4 +1,4 @@
-# React vis
+# vis-react
 
 A React component to display beautiful network graphs using vis.js
 
