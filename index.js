@@ -36,17 +36,14 @@ class Graph extends React.Component {
         var nodesChanged = (differenceWith)((differenceWith)(nextProps.graph.nodes, this.props.graph.nodes, isEqual), nodesAdded);
         this.patchNodes({ nodesRemoved: nodesRemoved, nodesAdded: nodesAdded, nodesChanged: nodesChanged });
       }
-
       if (edgesChange) {
         var edgesRemoved = (    differenceWith)(this.props.graph.edges, nextProps.graph.edges, isEqual);
         var edgesAdded = (  differenceWith)(nextProps.graph.edges, this.props.graph.edges, isEqual);
         this.patchEdges({ edgesRemoved: edgesRemoved, edgesAdded: edgesAdded });
       }
-
       if (optionsChange) {
         this.Network.setOptions(nextProps.options);
       }
-
       if (eventsChange) {
         var events = this.props.events || {};
         var _iteratorNormalCompletion = true;
@@ -73,7 +70,6 @@ class Graph extends React.Component {
             }
           }
         }
-
         events = nextProps.events || {};
         var _iteratorNormalCompletion2 = true;
         var _didIteratorError2 = false;
@@ -100,7 +96,6 @@ class Graph extends React.Component {
           }
         }
       }
-
       return false;
     }
  componentDidUpdate() {
@@ -141,10 +136,8 @@ class Graph extends React.Component {
           }
         }
       };
-
       // merge user provied options with our default ones
       var options = (defaultsDeep)(defaultOptions, this.props.options);
-
       this.Network = new vis.Network(container, Object.assign({}, this.props.graph, {
         edges: this.edges,
         nodes: this.nodes
@@ -153,13 +146,11 @@ class Graph extends React.Component {
       if (this.props.getNetwork) {
         this.props.getNetwork(this.Network);
       }
-
       // Add user provied events to network
       var events = this.props.events || {};
       var _iteratorNormalCompletion3 = true;
       var _didIteratorError3 = false;
       var _iteratorError3 = undefined;
-
       try {
         for (var _iterator3 = Object.keys(events)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
           var eventName = _step3.value;
@@ -181,7 +172,6 @@ class Graph extends React.Component {
         }
       }
     }
-
     render() {
       var identifier = this.state.identifier;
       var style = this.props.style;
@@ -192,7 +182,5 @@ class Graph extends React.Component {
       }, identifier);
     }
 }
-
 // export default Graph;
-
 module.exports = Graph;
