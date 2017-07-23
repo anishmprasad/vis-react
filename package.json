@@ -1,0 +1,101 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "vis-react@^0.2.0",
+        "scope": null,
+        "escapedName": "vis-react",
+        "name": "vis-react",
+        "rawSpec": "^0.2.0",
+        "spec": ">=0.2.0 <0.2.0",
+        "type": "range"
+      },
+      "/Users/ghost/Downloads/react-KT"
+    ]
+  ],
+  "_from": "vis-react@>=0.2.0 <0.2.0",
+  "_id": "vis-react@0.2.0",
+  "_inCache": true,
+  "_location": "/vis-react",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/vis-react-0.2.0.tgz_1496238181363_0.8129479601047933"
+  },
+  "_npmUser": {
+    "name": "anish",
+    "email": "anish.m.prasad@gmail.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "vis-react@^0.2.0",
+    "scope": null,
+    "escapedName": "vis-react",
+    "name": "vis-react",
+    "rawSpec": "^0.2.0",
+    "spec": ">=0.2.0 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.0.tgz",
+  "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
+  "_shrinkwrap": null,
+  "_spec": "vis-react@^0.2.0",
+  "_where": "/Users/ghost/Downloads/react-KT",
+  "author": {
+    "name": "Vincent Leanish",
+    "email": "vincent.leanish@gmail.com",
+    "url": "http://www.vincentleanish.fr/"
+  },
+  "bugs": {
+    "url": "https://github.com/anish/vis-react/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "uuid": "^2.0.1",
+    "vis": "^4.18.1"
+  },
+  "description": "A react component to render nice graphs using vis.js",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-stage-3": "^6.22.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
+    "tarball": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.0.tgz"
+  },
+  "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
+  "homepage": "https://github.com/anish/vis-react#readme",
+  "keywords": [
+    "react-component",
+    "react",
+    "graph",
+    "network",
+    "jsx"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "anish",
+      "email": "anish.m.prasad@gmail.com"
+    }
+  ],
+  "name": "vis-react",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^15.3.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishmprasad/vis-react.git"
+  },
+  "scripts": {},
+  "version": "0.2.0"
+}
