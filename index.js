@@ -2,7 +2,7 @@ var React = require('react');
 var defaultsDeep = require('lodash/fp/defaultsDeep')
 var isEqual = require('lodash/isEqual');
 var differenceWith = require('lodash/differenceWith');
-var vis = require('../vis/vis');
+var vis  = require('vis');
 var uuid = require('uuid');
 
 class Graph extends React.Component {
@@ -37,8 +37,8 @@ class Graph extends React.Component {
         this.patchNodes({ nodesRemoved: nodesRemoved, nodesAdded: nodesAdded, nodesChanged: nodesChanged });
       }
       if (edgesChange) {
-        var edgesRemoved = (    differenceWith)(this.props.graph.edges, nextProps.graph.edges, isEqual);
-        var edgesAdded = (  differenceWith)(nextProps.graph.edges, this.props.graph.edges, isEqual);
+        var edgesRemoved = (differenceWith)(this.props.graph.edges, nextProps.graph.edges, isEqual);
+        var edgesAdded = (differenceWith)(nextProps.graph.edges, this.props.graph.edges, isEqual);
         this.patchEdges({ edgesRemoved: edgesRemoved, edgesAdded: edgesAdded });
       }
       if (optionsChange) {

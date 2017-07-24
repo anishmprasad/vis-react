@@ -55,7 +55,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "uuid": "^2.0.1"
+    "uuid": "^2.0.1",
+    "vis": "^4.18.1"
   },
   "description": "A react component to render network graphs using vis.js",
   "devDependencies": {
