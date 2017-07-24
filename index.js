@@ -2,7 +2,7 @@ var React = require('react');
 var defaultsDeep = require('lodash/fp/defaultsDeep')
 var isEqual = require('lodash/isEqual');
 var differenceWith = require('lodash/differenceWith');
-var vis = require('vis');
+var vis = require('../vis/vis');
 var uuid = require('uuid');
 
 class Graph extends React.Component {
