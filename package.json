@@ -2,25 +2,25 @@
   "_args": [
     [
       {
-        "raw": "vis-react@^0.2.5",
+        "raw": "vis-react@^0.2.6",
         "scope": null,
         "escapedName": "vis-react",
         "name": "vis-react",
-        "rawSpec": "^0.2.5",
-        "spec": ">=0.2.5 <0.2.5",
+        "rawSpec": "^0.2.6",
+        "spec": ">=0.2.6 <0.2.6",
         "type": "range"
       },
       "/Users/ghost/Downloads/react-KT"
     ]
   ],
-  "_from": "vis-react@>=0.2.5 <0.2.5",
-  "_id": "vis-react@0.2.5",
+  "_from": "vis-react@>=0.2.6 <0.2.6",
+  "_id": "vis-react@0.2.6",
   "_inCache": true,
   "_location": "/vis-react",
   "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/vis-react-0.2.5.tgz_1496238181363_0.8129479601047933"
+    "tmp": "tmp/vis-react-0.2.6.tgz_1496238181363_0.8129479601047933"
   },
   "_npmUser": {
     "name": "anish",
@@ -29,21 +29,21 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "vis-react@^0.2.5",
+    "raw": "vis-react@^0.2.6",
     "scope": null,
     "escapedName": "vis-react",
     "name": "vis-react",
-    "rawSpec": "^0.2.5",
-    "spec": ">=0.2.5 <0.2.5",
+    "rawSpec": "^0.2.6",
+    "spec": ">=0.2.6 <0.2.6",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.5.tgz",
+  "_resolved": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.6.tgz",
   "_shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
   "_shrinkwrap": null,
-  "_spec": "vis-react@^0.2.5",
+  "_spec": "vis-react@^0.2.6",
   "_where": "/Users/ghost/Downloads/react-KT",
   "author": {
     "name": "Anish M Prasad",
@@ -56,7 +56,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "uuid": "^2.0.1",
-    "vis": "^4.18.1"
+    "vis": "https://github.com/Anishmprasad/vis/master.tar.gz"
   },
   "description": "A react component to render network graphs using vis.js",
   "devDependencies": {
@@ -67,7 +67,7 @@
   "directories": {},
   "dist": {
     "shasum": "5c9afbdf12242ab499d8bd2fbfeeb1433c441fae",
-    "tarball": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.5.tgz"
+    "tarball": "https://registry.npmjs.org/vis-react/-/vis-react-0.2.6.tgz"
   },
   "gitHead": "e037c5e7e6b3c84a55d1e13e7cd64e81ebf6e3b0",
   "homepage": "https://github.com/anish/vis-react#readme",
@@ -98,5 +98,5 @@
     "url": "git+https://github.com/anishmprasad/vis-react.git"
   },
   "scripts": {},
-  "version": "0.2.5"
+  "version": "0.2.6"
 }
