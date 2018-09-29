@@ -14,6 +14,27 @@ This component takes three vis.js configuration objects as properties:
 - options: normal vis.js options as described [here](http://visjs.org/docs/network/#options)
 - events: an object that has [event name](http://visjs.org/docs/network/#Events) as keys and their callback as values
 
+## Load
+
+To use a component, include the javascript and css files of vis in your root html:
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <script type="text/javascript">
+    // ... load a visualization
+  </script>
+</body>
+</html>
+```
+
+or load vis.js using require.js. Note that vis.css must be loaded too.
+
 # Usage
 
 ```javascript
