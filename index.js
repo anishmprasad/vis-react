@@ -213,6 +213,11 @@ var Graph = function (_Component) {
         this.props.getNodes(this.nodes);
       }
 
+      if (this.props.getEdges) {
+        this.props.getEdges(this.edges);
+      }
+
+
       // Add user provied events to network
       var events = this.props.events || {};
       var _iteratorNormalCompletion3 = true;
@@ -264,7 +269,8 @@ Graph.propTypes = {
   graph: _propTypes2.default.object,
   style: _propTypes2.default.object,
   getNetwork: _propTypes2.default.func,
-  getNodes: _propTypes2.default.func
+  getNodes: _propTypes2.default.func,
+  getEdges: _propTypes2.default.func
 };
 
 exports.default = Graph;
