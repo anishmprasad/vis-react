@@ -8,28 +8,38 @@ Rendered graphs are scrollable, zoomable, retina ready, dynamic, and switch layo
 
 Due to the imperative nature of vis.js, updating graph properties causes complete redraw of graph and completely porting it to React is a big project itself!
 
-This component takes three vis.js configuration objects as properties:  
+This component takes three vis.js configuration objects as properties:
 
-- graph: contains two arrays { edges, nodes }
-- options: normal vis.js options as described [here](http://visjs.org/docs/network/#options)
-- events: an object that has [event name](http://visjs.org/docs/network/#Events) as keys and their callback as values
+-   graph: contains two arrays { edges, nodes }
+-   options: normal vis.js options as described [here](http://visjs.org/docs/network/#options)
+-   events: an object that has [event name](http://visjs.org/docs/network/#Events) as keys and their callback as values
+
+### Installation
+
+```
+// with npm
+$ npm install netslider --save
+
+// with yarn
+$ yarn add netslider
+```
 
 ## Load
 
 To use a component, include the javascript and css files of vis in your root html:
 
 ```html
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <script type="text/javascript">
-    // ... load a visualization
-  </script>
-</body>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<script type="text/javascript">
+			// ... load a visualization
+		</script>
+	</body>
 </html>
 ```
 
@@ -41,35 +51,70 @@ or load vis.js using require.js. Note that vis.css must be loaded too.
 var Graph = require('vis-react');
 
 var graph = {
-  nodes: [
-      {id: 1, label: 'Node 1'},
-      {id: 2, label: 'Node 2'},
-      {id: 3, label: 'Node 3'},
-      {id: 4, label: 'Node 4'},
-      {id: 5, label: 'Node 5'}
-    ],
-  edges: [
-      {from: 1, to: 2},
-      {from: 1, to: 3},
-      {from: 2, to: 4},
-      {from: 2, to: 5}
-    ]
+	nodes: [
+		{ id: 1, label: 'Node 1' },
+		{ id: 2, label: 'Node 2' },
+		{ id: 3, label: 'Node 3' },
+		{ id: 4, label: 'Node 4' },
+		{ id: 5, label: 'Node 5' }
+	],
+	edges: [{ from: 1, to: 2 }, { from: 1, to: 3 }, { from: 2, to: 4 }, { from: 2, to: 5 }]
 };
 
 var options = {
-    layout: {
-        hierarchical: true
-    },
-    edges: {
-        color: "#000000"
-    }
+	layout: {
+		hierarchical: true
+	},
+	edges: {
+		color: '#000000'
+	}
 };
 
 var events = {
-    select: function(event) {
-        var { nodes, edges } = event;
-    }
-}
+	select: function(event) {
+		var { nodes, edges } = event;
+	}
+};
 
-React.render(<Graph graph={graph} options={options} events={events} />, document.body);
+React.render(
+	<Graph
+		graph={graph}
+		options={options}
+		events={events}
+		style={style}
+		getNetwork={this.getNetwork}
+		getEdges={this.getEdges}
+		getNodes={this.getNodes}
+		vis={vis => (this.vis = vis)}
+	/>,
+	document.body
+);
 ```
+
+Yes, it's really all you need to get started as you can see in this live and interactive demo:
+
+[![Edit Button](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/3vvy7xqo9m)
+
+### Props
+
+| Name       | Type     | Required | Description           |
+| ---------- | -------- | -------- | --------------------- |
+| graph      | `object` | `true`   | nodes and edges       |
+| options    | `object` | `true`   | options               |
+| events     | `object` | `true`   | events callback       |
+| style      | `object` | `false`  | custom styles         |
+| getNetwork | `func`   | `false`  | returns network nodes |
+| getNodes   | `func`   | `false`  | returns all nodes     |
+| vis        | `object` | `false`  | returns vis instance  |
+
+<!-- ### Screenshot
+
+![Preview][screenshot]
+
+[screenshot]: https://raw.githubusercontent.com/anishmprasad/netslider/master/screenshot/Screenshot.png 'Preview screenshot' -->
+
+### Demo
+
+-   [anish.m.prasad.com](https://anishmprasad.com/opensource/vis-react)
+-   [anishmprasad.github.io](https://anishmprasad.github.io/opensource/vis-react)
+-   [codesandbox.io](https://codesandbox.io/embed/3vvy7xqo9m)
