@@ -18,10 +18,10 @@ This component takes three vis.js configuration objects as properties:
 
 ```
 // with npm
-$ npm install netslider --save
+$ npm install vis-react --save
 
 // with yarn
-$ yarn add netslider
+$ yarn add vis-react
 ```
 
 ## Load
