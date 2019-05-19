@@ -118,3 +118,8 @@ Yes, it's really all you need to get started as you can see in this live and int
 -   [anish.m.prasad.com](https://anishmprasad.com/opensource/vis-react)
 -   [anishmprasad.github.io](https://anishmprasad.github.io/opensource/vis-react)
 -   [codesandbox.io](https://codesandbox.io/embed/3vvy7xqo9m)
+
+### License
+
+Apache 2.0
+
