@@ -121,5 +121,5 @@ Yes, it's really all you need to get started as you can see in this live and int
 
 ### License
 
-Apache 2.0
+MIT
 
