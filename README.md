@@ -99,13 +99,13 @@ Yes, it's really all you need to get started as you can see in this live and int
 
 | Name       | Type     | Required | Description           |
 | ---------- | -------- | -------- | --------------------- |
-| graph      | `object` | `true`   | nodes and edges       |
-| options    | `object` | `true`   | options               |
-| events     | `object` | `true`   | events callback       |
-| style      | `object` | `false`  | custom styles         |
-| getNetwork | `func`   | `false`  | returns network nodes |
-| getNodes   | `func`   | `false`  | returns all nodes     |
-| vis        | `object` | `false`  | returns vis instance  |
+| graph      | `object` | `true`   | Nodes and Edges       |
+| options    | `object` | `true`   | Options               |
+| events     | `object` | `true`   | Events callback       |
+| style      | `object` | `false`  | Custom styles         |
+| getNetwork | `func`   | `false`  | Network nodes         | 
+| getNodes   | `func`   | `false`  | All nodes             |
+| vis        | `object` | `false`  | vis instance          |
 
 <!-- ### Screenshot
 
