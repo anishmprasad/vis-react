@@ -29,7 +29,7 @@
 		"hammerjs"
 	],
 	"license": "MIT",
-	"main": "index.js",
+	"main": "/dist/index.js",
 	"maintainers": [
 		{
 			"name": "anish",
@@ -47,5 +47,5 @@
 		"url": "git+https://github.com/anishmprasad/vis-react.git"
 	},
 	"scripts": {},
-	"version": "0.4.5"
+	"version": "0.4.6-rc1"
 }
