@@ -48,7 +48,7 @@ or load vis.js using require.js. Note that vis.css must be loaded too.
 # Usage
 
 ```javascript
-var Graph = require('vis-react');
+import Graph from 'vis-react';
 
 var graph = {
 	nodes: [
