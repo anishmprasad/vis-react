@@ -58,7 +58,12 @@ var graph = {
 		{ id: 4, label: 'Node 4' },
 		{ id: 5, label: 'Node 5' }
 	],
-	edges: [{ from: 1, to: 2 }, { from: 1, to: 3 }, { from: 2, to: 4 }, { from: 2, to: 5 }]
+	edges: [
+		{ from: 1, to: 2 },
+		{ from: 1, to: 3 },
+		{ from: 2, to: 4 },
+		{ from: 2, to: 5 }
+	]
 };
 
 var options = {
@@ -67,7 +72,8 @@ var options = {
 	},
 	edges: {
 		color: '#000000'
-	}
+	},
+	interaction: { hoverEdges: true }
 };
 
 var events = {
@@ -97,15 +103,15 @@ Yes, it's really all you need to get started as you can see in this live and int
 
 ### Props
 
-| Name       | Type     | Required | Description           |
-| ---------- | -------- | -------- | --------------------- |
-| graph      | `object` | `true`   | Nodes and Edges       |
-| options    | `object` | `true`   | Options               |
-| events     | `object` | `true`   | Events callback       |
-| style      | `object` | `false`  | Custom styles         |
-| getNetwork | `func`   | `false`  | Network nodes         | 
-| getNodes   | `func`   | `false`  | All nodes             |
-| vis        | `object` | `false`  | vis instance          |
+| Name       | Type     | Required | Description     |
+| ---------- | -------- | -------- | --------------- |
+| graph      | `object` | `true`   | Nodes and Edges |
+| options    | `object` | `true`   | Options         |
+| events     | `object` | `true`   | Events callback |
+| style      | `object` | `false`  | Custom styles   |
+| getNetwork | `func`   | `false`  | Network nodes   |
+| getNodes   | `func`   | `false`  | All nodes       |
+| vis        | `object` | `false`  | vis instance    |
 
 <!-- ### Screenshot
 
@@ -122,4 +128,3 @@ Yes, it's really all you need to get started as you can see in this live and int
 ### License
 
 MIT
-
