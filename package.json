@@ -8,9 +8,9 @@
 		"url": "https://github.com/anishmprasad/vis-react/issues"
 	},
 	"dependencies": {
-		"lodash": "^4.17.4",
-		"uuid": "^2.0.1",
-		"vis": "https://github.com/anishmprasad/vis/archive/master.tar.gz"
+		"lodash": "^4.17.15",
+		"uuid": "^7.0.2",
+		"vis-react-core": "1.0.0"
 	},
 	"description": "A react component to render network graphs using vis.js",
 	"devDependencies": {
@@ -39,7 +39,7 @@
 	"name": "vis-react",
 	"optionalDependencies": {},
 	"peerDependencies": {
-		"react": "^16.8.6"
+		"react": "^16.13.0"
 	},
 	"readme": "ERROR: No README data found!",
 	"repository": {
@@ -47,5 +47,5 @@
 		"url": "git+https://github.com/anishmprasad/vis-react.git"
 	},
 	"scripts": {},
-	"version": "0.4.8"
+	"version": "0.4.9"
 }
